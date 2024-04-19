@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1713515508 "/home/pooh/Documents/INF221/assignment6.tex" "/home/pooh/Documents/INF221/assignment6.pdf" "assignment6" 1713515508
+["pdflatex"] 1713516185 "/home/pooh/Documents/INF221/assignment6.tex" "/home/pooh/Documents/INF221/assignment6.pdf" "assignment6" 1713516185
   "/etc/texmf/web2c/texmf.cnf" 1712931659 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/pooh/Documents/INF221/assignment6.aux" 1713515508 8 a94a2480d3289e625eea47cd1b285758 ""
-  "/home/pooh/Documents/INF221/assignment6.tex" 1713515508 3791 0aef272e1531cbf9cdcbd483815c906b ""
+  "/home/pooh/Documents/INF221/assignment6.aux" 1713516185 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/home/pooh/Documents/INF221/assignment6.tex" 1713516184 3791 0aef272e1531cbf9cdcbd483815c906b ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -55,11 +55,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1712931673 165012 f177baa1c39a3ebd62c3096a43521a0d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1712931678 4877386 beb99d6ae44a035a0248328a1c1fd5f4 ""
-  "assignment6.aux" 1713515508 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
-  "assignment6.tex" 1713515508 3791 0aef272e1531cbf9cdcbd483815c906b ""
+  "assignment6.aux" 1713516185 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
+  "assignment6.tex" 1713516184 3791 0aef272e1531cbf9cdcbd483815c906b ""
   (generated)
-  "/home/pooh/Documents/INF221/assignment6.pdf"
-  "assignment6.aux"
   "assignment6.pdf"
-  "/home/pooh/Documents/INF221/assignment6.log"
+  "assignment6.aux"
   "assignment6.log"
+  "/home/pooh/Documents/INF221/assignment6.log"
+  "/home/pooh/Documents/INF221/assignment6.pdf"
