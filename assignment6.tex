@@ -1,0 +1,124 @@
+\documentclass{article}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{amsmath} % Add this line
+
+\title{Assignment 6: Adjecency list and matrix and breadth-first- and depth-first- search traversal}
+
+\author{Erik Lykke Trier}
+\author{Jony Karmakar}
+\author{Simen Westegaard Larsen}
+\date{\today}
+
+\begin{document}
+\maketitle
+\subsection*{Exercise 1}
+The given adjecency-list representation we can make an adjecency-matrix representation. The start points are indicated
+on the left size and the end point is on the top side.
+
+\[
+\begin{array}{cc|ccccccc}
+    & & \multicolumn{7}{c}{End point} \\
+    & & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+\cline{3-9}
+\multirow{7}{*}{\rotatebox{90}{Start point}} & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 \\
+    & 2 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\
+    & 3 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    & 4 & 0 & 1 & 0 & 0 & 1 & 0 & 0 \\
+    & 5 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\
+    & 6 & 0 & 0 & 1 & 0 & 0 & 0 & 1 \\
+    & 7 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\
+\end{array}
+\]
+
+
+\subsection*{Exercise 2}
+\subsubsection*{2.1}
+Traversal of each node using breadth first search traversal. For breadth first traversal we need two queues one to handle which 
+nodes we are looking at currently and one for keeping track of the nodes we have already visited. Let us call the queue for the 
+current nodes we are looking at "Queue" and the queue keeping track of the already visited "visited". \newline
+
+Step 1: Initially the two queues are empty.   \newline 
+
+Step 2: Push node A to queue and mark it as visited. \newline   
+
+visited: A  \newline
+
+queue: A  \newline \newline
+
+Step 3: Remove A from the queue and visit its unvisited neighbours and add them to the queue.
+
+visited: A, B, C \newline
+
+queue: B, C \newline
+
+Step 4: Remove B from the queue and visit its unvisited neighbours and add them to the queue.
+
+visited: A, B, C, D, E \newline
+
+queue: C, D, E \newline 
+
+Step 5: Remove C from the queue and visit its unvisited neighbours and add them to the queue.
+
+visited: A, B, C, D, E, F \newline
+
+queue: D, E, F \newline
+
+Step 6: Remove D from the queue and visit its unvisited neighbours and add them to the queue.
+
+visited: A, B, C, D, E, F \newline
+
+queue: E, F \newline
+
+Step 7: Remove E from the queue and visit its unvisited neighbours and add them to the queue.
+
+visited: A, B, C, D, E, F \newline
+
+queue: F \newline 
+Step 8: Remove F from the queue and visit its unvisited neighbours and add them to the queue.
+
+visited: A, B, C, D, E, F \newline
+
+queue:  \newline
+
+Now that the queue is empty the algorithm will break and all nodes have been visited.
+
+\subsection*{2.2}
+Traversal of each node using depth first search traversal. For depth first traversal we need a stack to keep track of the nodes we want to 
+visit next by using a stack we will get to the depth before the breadth, and as in BFS we will also keep track of the nodes we have visited
+using an array.
+
+Step 1: Initially stack and visited array are empty.
+visited: \newline
+stack: \newline
+
+Step 2: Push A to visited and its neighbours that we have not yet visited to the stack:
+visited: A \newline
+stack: B, C \newline
+
+Step 3: Push B to visited and its unvisited neighbours to the stack:
+visited: A, B \newline
+stack: D, E, C \newline
+
+Step 4: Push D to visited and its unvisited neighbours to the stack:
+visited: A, B, D \newline
+stack: E, C \newline
+
+Step 5: Push E to visited and its unvisited neighbours to the stack:
+visited: A, B, D, E \newline
+stack:C \newline
+
+Step 6: Push C to visited and its unvisited neighbours to the stack:
+visited: A, B, D, E, C \newline
+stack: F \newline
+
+Step 7: Push F to visited and its unvisited neighbours to the stack:
+visited: A, B, D, E, C, F \newline
+stack: \newline
+
+Stack is now empty so we have visited all the nodes and the DFS traversal is over.
+
+
+
+
+\end{document}
